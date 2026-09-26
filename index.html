@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abhishek M | Cloud & DevOps Engineer</title>
+  
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
             brand: '#38bdf8',      /* Sky blue accent */
-            darkbg: '#0b0f19',     /* Deep space dark */
-            cardbg: '#111827',     /* Gray 900 card surface */
+            darkbg: '#0b0f19',     /* Deep dark background */
+            cardbg: '#111827',     /* Gray-900 card surface */
             terminal: '#030712',   /* Terminal black */
           }
         }
@@ -25,7 +28,7 @@
 </head>
 <body class="bg-darkbg text-slate-300 font-sans antialiased selection:bg-brand selection:text-darkbg">
 
-  <!-- Header / Nav -->
+  <!-- Navigation Bar -->
   <header class="sticky top-0 z-50 backdrop-blur-md bg-darkbg/90 border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#" class="font-mono font-bold text-lg text-brand tracking-wider">
@@ -38,9 +41,14 @@
         <a href="#experience" class="hover:text-brand transition">Experience</a>
         <a href="#certifications" class="hover:text-brand transition">Certifications</a>
       </nav>
-      <a href="mailto:abhishekgowdru.m@gmail.com" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-md bg-brand hover:bg-sky-300 text-darkbg font-bold transition">
-        <i class="fa-solid fa-paper-plane"></i> Get In Touch
-      </a>
+      <div class="flex items-center gap-3">
+        <a href="resume.pdf" download class="inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-md bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+          <i class="fa-solid fa-file-arrow-down"></i> Resume
+        </a>
+        <a href="mailto:abhishekgowdru.m@gmail.com" class="inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider rounded-md bg-brand hover:bg-sky-300 text-darkbg font-bold transition">
+          <i class="fa-solid fa-envelope"></i> Contact
+        </a>
+      </div>
     </div>
   </header>
 
@@ -51,20 +59,20 @@
         <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span> Open to DevOps & Cloud Roles
       </div>
       <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
-        Hi, I'm Abhishek M. <br />
-        <span class="text-brand">Linux Administrator | AWS | DevOps</span>
+        Abhishek M <br />
+        <span class="text-brand text-2xl md:text-3xl font-semibold">Linux Administrator | AWS | DevOps</span>
       </h1>
       <p class="text-slate-400 text-base md:text-lg leading-relaxed max-w-xl">
-        DevOps & Cloud Engineer specializing in AWS cloud infrastructure, Kubernetes orchestration, Infrastructure as Code with Terraform, and zero-downtime CI/CD automation.
+        Motivated Cloud and DevOps Engineer based in Karnataka, India, specializing in AWS cloud architecture, containerization with Docker & Kubernetes, Infrastructure as Code with Terraform, and CI/CD pipelines.
       </p>
       <div class="flex flex-wrap items-center gap-4 pt-2">
         <a href="#projects" class="px-5 py-2.5 rounded-lg bg-brand text-darkbg font-bold hover:bg-sky-300 transition text-sm">
-          Explore Projects
+          View Projects
         </a>
-        <a href="https://github.com/abhishekgowdrum" target="_blank" class="px-4 py-2.5 rounded-lg border border-slate-700 hover:border-slate-500 text-sm font-medium transition flex items-center gap-2">
+        <a href="https://github.com/abhishekgowdrum" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg border border-slate-700 hover:border-slate-500 text-sm font-medium transition flex items-center gap-2">
           <i class="fa-brands fa-github text-base"></i> GitHub
         </a>
-        <a href="https://linkedin.com/in/abhishek-mcloud" target="_blank" class="px-4 py-2.5 rounded-lg border border-slate-700 hover:border-slate-500 text-sm font-medium transition flex items-center gap-2">
+        <a href="https://linkedin.com/in/abhishek-mcloud" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg border border-slate-700 hover:border-slate-500 text-sm font-medium transition flex items-center gap-2">
           <i class="fa-brands fa-linkedin text-base text-brand"></i> LinkedIn
         </a>
       </div>
@@ -79,17 +87,17 @@
             <span class="h-3 w-3 rounded-full bg-amber-500 inline-block"></span>
             <span class="h-3 w-3 rounded-full bg-emerald-500 inline-block"></span>
           </div>
-          <span class="text-slate-500 text-[11px]">infra-metrics.sh</span>
+          <span class="text-slate-500 text-[11px]">infrastructure-state.sh</span>
         </div>
         <div class="p-5 space-y-2.5 leading-relaxed">
-          <p class="text-slate-500"># Infrastructure state check</p>
+          <p class="text-slate-500"># Cloud infrastructure health verification</p>
           <p class="text-slate-300"><span class="text-brand">$</span> terraform plan</p>
-          <p class="text-emerald-400">Plan: 0 to add, 0 to change, 0 to destroy. Up to date.</p>
+          <p class="text-emerald-400">Plan: 0 to add, 0 to change, 0 to destroy. Infrastructure synchronized.</p>
           <p class="text-slate-300 pt-2"><span class="text-brand">$</span> kubectl get pods -n aiops-platform</p>
           <p class="text-slate-400">telemetry-collector-9b48c &nbsp; 1/1 &nbsp; Running &nbsp; 0</p>
           <p class="text-slate-400">anomaly-detector-f6d21 &nbsp;&nbsp;&nbsp; 1/1 &nbsp; Running &nbsp; 0</p>
           <p class="text-slate-300 pt-2"><span class="text-brand">$</span> aws cloudwatch get-metric-statistics</p>
-          <p class="text-sky-400">STATUS: Healthy | MTTR Reduction: Active</p>
+          <p class="text-sky-400">STATUS: Healthy | MTTR Reduction Engine: Active</p>
           <p class="text-slate-300 pt-2 flex items-center gap-1">
             <span class="text-brand">$</span> <span class="h-4 w-2 bg-brand animate-pulse inline-block"></span>
           </p>
@@ -103,7 +111,7 @@
     <div class="max-w-6xl mx-auto px-6">
       <div class="mb-10">
         <h2 class="text-2xl md:text-3xl font-bold text-white">Technical Arsenal</h2>
-        <p class="text-slate-400 text-sm mt-1">Cloud native, automation, and infrastructure engineering competencies</p>
+        <p class="text-slate-400 text-sm mt-1">Tools, platforms, and methodologies used across production environments</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -111,15 +119,15 @@
         <div class="p-6 rounded-xl bg-cardbg border border-slate-800">
           <div class="flex items-center gap-3 mb-4">
             <i class="fa-solid fa-gears text-brand text-lg"></i>
-            <h3 class="font-bold text-white text-base">DevOps & Orchestration</h3>
+            <h3 class="font-bold text-white text-base">DevOps & Automation</h3>
           </div>
           <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">Linux</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">Docker</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">Kubernetes</span>
-            <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">Jenkins</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">Terraform</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">Ansible</span>
-            <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">Linux</span>
+            <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">Jenkins</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">Git</span>
           </div>
         </div>
@@ -128,12 +136,13 @@
         <div class="p-6 rounded-xl bg-cardbg border border-slate-800">
           <div class="flex items-center gap-3 mb-4">
             <i class="fa-brands fa-aws text-brand text-lg"></i>
-            <h3 class="font-bold text-white text-base">AWS Compute & Network</h3>
+            <h3 class="font-bold text-white text-base">Compute & Networking</h3>
           </div>
           <div class="flex flex-wrap gap-2">
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">EC2</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">VPC & Subnets</span>
-            <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">NAT & Transit GW</span>
+            <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">NAT Gateway</span>
+            <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">Transit Gateway</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">VPC Peering</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">ALB / NLB</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">Auto Scaling</span>
@@ -141,7 +150,7 @@
           </div>
         </div>
 
-        <!-- Storage, Security & Monitoring -->
+        <!-- Security, Storage & Observability -->
         <div class="p-6 rounded-xl bg-cardbg border border-slate-800">
           <div class="flex items-center gap-3 mb-4">
             <i class="fa-solid fa-shield-halved text-brand text-lg"></i>
@@ -151,10 +160,11 @@
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">IAM</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">CloudWatch</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">CloudTrail</span>
-            <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">S3 & EBS</span>
+            <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">S3 & EFS</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">RDS & DynamoDB</span>
-            <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">WAF & Shield</span>
+            <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">Security Hub</span>
             <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">GuardDuty</span>
+            <span class="px-2.5 py-1 text-xs rounded bg-slate-800 text-slate-300 font-mono">WAF & Shield</span>
           </div>
         </div>
       </div>
@@ -165,7 +175,7 @@
   <section id="projects" class="py-20 max-w-6xl mx-auto px-6">
     <div class="mb-12">
       <h2 class="text-3xl font-bold text-white">Highlighted Infrastructure Projects</h2>
-      <p class="text-slate-400 text-sm mt-1">End-to-end architectures, automation pipelines, and deployments</p>
+      <p class="text-slate-400 text-sm mt-1">End-to-end architectures, automated deployments, and reliability solutions</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -174,11 +184,11 @@
         <div class="space-y-4">
           <div class="flex items-center justify-between text-xs text-brand font-mono">
             <span>AWS EKS • K8s • CI/CD</span>
-            <a href="https://github.com/abhishekgowdrum" class="hover:text-white"><i class="fa-brands fa-github text-base"></i></a>
+            <a href="https://github.com/abhishekgowdrum" target="_blank" rel="noopener noreferrer" class="hover:text-white"><i class="fa-brands fa-github text-base"></i></a>
           </div>
           <h3 class="text-xl font-bold text-white">3-Tier Web Application on AWS EKS</h3>
           <p class="text-slate-400 text-sm leading-relaxed">
-            Containerized a multi-tier application and orchestrated deployment onto AWS EKS. Implemented scalable cloud networking, high availability, and automated CI/CD application rollouts.
+            Demonstrated the full deployment of a scalable 3-tier web application using Kubernetes on AWS EKS. Handled containerization, Kubernetes orchestration, and automated application rollouts in a highly available cloud architecture.
           </p>
         </div>
         <div class="flex flex-wrap gap-2 pt-6">
@@ -193,11 +203,11 @@
         <div class="space-y-4">
           <div class="flex items-center justify-between text-xs text-brand font-mono">
             <span>Jenkins • Terraform • Ansible</span>
-            <a href="https://github.com/abhishekgowdrum" class="hover:text-white"><i class="fa-brands fa-github text-base"></i></a>
+            <a href="https://github.com/abhishekgowdrum" target="_blank" rel="noopener noreferrer" class="hover:text-white"><i class="fa-brands fa-github text-base"></i></a>
           </div>
           <h3 class="text-xl font-bold text-white">CI/CD Pipeline with Microservices</h3>
           <p class="text-slate-400 text-sm leading-relaxed">
-            Constructed an automated Jenkins CI/CD pipeline to package Docker containers onto Kubernetes. Provisioned AWS infrastructure as code via Terraform and managed configuration using Ansible.
+            Constructed an automated CI/CD pipeline using Jenkins and Git to build Docker containers and deploy to Kubernetes. Automated AWS infrastructure provisioning with Terraform and configuration management with Ansible.
           </p>
         </div>
         <div class="flex flex-wrap gap-2 pt-6">
@@ -212,11 +222,11 @@
         <div class="space-y-4">
           <div class="flex items-center justify-between text-xs text-brand font-mono">
             <span>AIOps • Python • CloudWatch</span>
-            <a href="https://github.com/abhishekgowdrum" class="hover:text-white"><i class="fa-brands fa-github text-base"></i></a>
+            <a href="https://github.com/abhishekgowdrum" target="_blank" rel="noopener noreferrer" class="hover:text-white"><i class="fa-brands fa-github text-base"></i></a>
           </div>
           <h3 class="text-xl font-bold text-white">AI-Powered AWS AIOps Monitoring</h3>
           <p class="text-slate-400 text-sm leading-relaxed">
-            Engineered an AIOps telemetry platform with Scikit-learn and CloudWatch to detect anomalies and automate log analysis, drastically reducing Mean Time To Repair (MTTR).
+            Engineered an AI-powered AIOps platform using CloudWatch, Python, Scikit-learn, Docker, and Kubernetes to detect telemetry anomalies and automate root-cause remediation, drastically reducing Mean Time To Repair (MTTR).
           </p>
         </div>
         <div class="flex flex-wrap gap-2 pt-6">
@@ -238,14 +248,16 @@
       <div class="space-y-6">
         <div class="p-6 rounded-xl bg-cardbg border border-slate-800">
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-1 mb-3">
-            <h3 class="text-lg font-bold text-white">DevOps / AWS Intern</h3>
-            <span class="text-xs font-mono text-brand">BDreamz Global Solutions Pvt. Ltd.</span>
+            <div>
+              <h3 class="text-lg font-bold text-white">DevOps / AWS Intern</h3>
+              <p class="text-xs font-mono text-brand">BDreamz Global Solutions Private Limited</p>
+            </div>
           </div>
           <ul class="list-disc list-inside text-sm text-slate-400 space-y-2 leading-relaxed">
-            <li>Administered Linux environments handling permissions, SSH access, services, package management, and system troubleshooting.</li>
-            <li>Configured AWS core infrastructure including EC2, VPC, S3, IAM, Security Groups, and CloudWatch metrics.</li>
-            <li>Employed Git, Docker, Jenkins, Ansible, and Terraform to automate CI/CD pipelines and infrastructure deployments.</li>
-            <li>Assisted in incident diagnosis, application debugging, and maintaining system availability.</li>
+            <li>Administered Linux environments handling user/group permission management, SSH security, package installation, system services, and process monitoring.</li>
+            <li>Provisioned and managed AWS infrastructure including EC2 instances, VPC architecture, S3 buckets, IAM policies, Security Groups, and CloudWatch alarms.</li>
+            <li>Implemented Git, Docker, Jenkins, Ansible, and Terraform in DevOps pipelines for continuous integration, configuration management, and Infrastructure as Code.</li>
+            <li>Collaborated in troubleshooting application runtime and cloud networking issues to maintain system reliability.</li>
           </ul>
         </div>
       </div>
@@ -255,24 +267,46 @@
   <!-- Certifications & Education Section -->
   <section id="certifications" class="py-16 max-w-6xl mx-auto px-6">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
       <!-- Certifications -->
       <div>
         <h2 class="text-2xl font-bold text-white mb-6">Certifications</h2>
         <div class="space-y-4">
-          <div class="p-4 rounded-xl bg-cardbg border border-slate-800 flex items-center gap-4">
-            <i class="fa-solid fa-award text-2xl text-amber-400"></i>
+          
+          <!-- AWS Certification -->
+          <div class="p-4 rounded-xl bg-cardbg border border-slate-800 flex items-start gap-4">
+            <i class="fa-solid fa-award text-2xl text-amber-400 mt-1"></i>
             <div>
               <h3 class="text-sm font-bold text-white">AWS Certified Cloud Practitioner</h3>
               <p class="text-xs text-slate-400">Amazon Web Services</p>
             </div>
           </div>
-          <div class="p-4 rounded-xl bg-cardbg border border-slate-800 flex items-center gap-4">
-            <i class="fa-solid fa-graduation-cap text-2xl text-brand"></i>
-            <div>
-              <h3 class="text-sm font-bold text-white">Cloud & DevOps Certification</h3>
-              <p class="text-xs text-slate-400">Besant Technologies (Hebbal)</p>
+
+          <!-- Besant Technologies Certificate -->
+          <div class="p-4 rounded-xl bg-cardbg border border-slate-800 flex items-start justify-between gap-4">
+            <div class="flex items-start gap-4">
+              <i class="fa-solid fa-graduation-cap text-2xl text-brand mt-1"></i>
+              <div>
+                <h3 class="text-sm font-bold text-white">Cloud Computing Training</h3>
+                <p class="text-xs text-slate-400">Besant Technologies (Hebbal)</p>
+                <div class="flex items-center gap-3 mt-1.5 text-[11px] font-mono text-slate-400">
+                  <span>ID: <span class="text-slate-300">BDZ-152515</span></span>
+                  <span>•</span>
+                  <span>Issued: <span class="text-slate-300">Sep 12, 2026</span></span>
+                </div>
+              </div>
             </div>
+            <!-- View / Download Link -->
+            <a 
+              href="Cloud_Computing_Certificate_Besant.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 text-xs text-brand hover:text-sky-300 font-mono transition py-1 px-2.5 rounded border border-slate-800 hover:border-slate-700 bg-slate-900/60"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i> View
+            </a>
           </div>
+
         </div>
       </div>
 
@@ -283,19 +317,24 @@
           <h3 class="text-sm font-bold text-white">Bachelor of Engineering (B.E.)</h3>
           <p class="text-xs text-brand font-medium mt-0.5">Information Science and Engineering (2022 – 2026)</p>
           <p class="text-xs text-slate-400 mt-2">S.J.C. Institute of Technology, Chickballapur</p>
+          <div class="mt-4 pt-3 border-t border-slate-800/80">
+            <span class="text-xs font-semibold text-slate-300">Core Strengths:</span>
+            <p class="text-xs text-slate-400 mt-1">Problem Solving, Troubleshooting, Incident Response, Team Collaboration, Adaptability</p>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="border-t border-slate-800 py-10">
     <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-      <p>© Abhishek M. Built with Tailwind CSS.</p>
+      <p>© Abhishek M. Built with Tailwind CSS & GitHub Actions.</p>
       <div class="flex items-center gap-6">
-        <a href="mailto:abhishekgowdru.m@gmail.com" class="hover:text-brand transition"><i class="fa-solid fa-envelope mr-1"></i> Email</a>
-        <a href="https://linkedin.com/in/abhishek-mcloud" target="_blank" class="hover:text-brand transition"><i class="fa-brands fa-linkedin mr-1"></i> LinkedIn</a>
-        <a href="https://github.com/abhishekgowdrum" target="_blank" class="hover:text-brand transition"><i class="fa-brands fa-github mr-1"></i> GitHub</a>
+        <a href="mailto:abhishekgowdru.m@gmail.com" class="hover:text-brand transition"><i class="fa-solid fa-envelope mr-1"></i> abhishekgowdru.m@gmail.com</a>
+        <a href="https://linkedin.com/in/abhishek-mcloud" target="_blank" rel="noopener noreferrer" class="hover:text-brand transition"><i class="fa-brands fa-linkedin mr-1"></i> LinkedIn</a>
+        <a href="https://github.com/abhishekgowdrum" target="_blank" rel="noopener noreferrer" class="hover:text-brand transition"><i class="fa-brands fa-github mr-1"></i> GitHub</a>
       </div>
     </div>
   </footer>
